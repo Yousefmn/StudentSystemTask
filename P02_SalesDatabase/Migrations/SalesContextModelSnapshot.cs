@@ -47,7 +47,7 @@ namespace P02_SalesDatabase.Migrations
 
                     b.HasKey("CustomerId");
 
-                    b.ToTable("Customers");
+                    b.ToTable("Customers", (string)null);
                 });
 
             modelBuilder.Entity("P02_SalesDatabase.Models.Product", b =>
@@ -71,7 +71,7 @@ namespace P02_SalesDatabase.Migrations
 
                     b.HasKey("ProductId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("P02_SalesDatabase.Models.Sale", b =>
@@ -102,7 +102,7 @@ namespace P02_SalesDatabase.Migrations
 
                     b.HasIndex("StoreId");
 
-                    b.ToTable("Sales");
+                    b.ToTable("Sales", (string)null);
                 });
 
             modelBuilder.Entity("P02_SalesDatabase.Models.Store", b =>
@@ -120,7 +120,7 @@ namespace P02_SalesDatabase.Migrations
 
                     b.HasKey("StoreId");
 
-                    b.ToTable("Stores");
+                    b.ToTable("Stores", (string)null);
                 });
 
             modelBuilder.Entity("P02_SalesDatabase.Models.Sale", b =>

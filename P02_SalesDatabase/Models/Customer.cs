@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace P02_SalesDatabase.Models;
 
+[Index(nameof(Email), IsUnique = true)]
 public class Customer
 {
     public int CustomerId { get; set; }
